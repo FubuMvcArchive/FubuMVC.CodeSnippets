@@ -83,6 +83,8 @@ task :compile => [:restore_if_missing, :clean, :version] do
   MSBuildRunner.compile :compilemode => COMPILE_TARGET, :solutionfile => 'src/FubuMVC.CodeSnippets.sln', :clrversion => CLR_TOOLS_VERSION
 
   target = COMPILE_TARGET.downcase
+
+  sh "bottles assembly-pak src/FubuMVC.CodeSnippets -p FubuMVC.CodeSnippets.csproj"
 end
 
 def copyOutputFiles(fromDir, filePattern, outDir)
