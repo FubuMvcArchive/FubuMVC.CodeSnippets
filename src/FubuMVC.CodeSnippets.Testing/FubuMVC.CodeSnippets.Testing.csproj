@@ -82,7 +82,9 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="CLanguageSnippetFinderTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnippetTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

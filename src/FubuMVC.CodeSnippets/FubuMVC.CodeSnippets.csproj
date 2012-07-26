@@ -64,7 +64,10 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="ISnippetFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snippet.cs" />
+    <Compile Include="CLanguageSnippetFinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
