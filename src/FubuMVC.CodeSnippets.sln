@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FubuMVC.CodeSnippets", "FubuMVC.CodeSnippets\FubuMVC.CodeSnippets.csproj", "{A7486DBA-CB38-46FC-87AB-0FB13BE74332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FubuMVC.CodeSnippets.Testing", "FubuMVC.CodeSnippets.Testing\FubuMVC.CodeSnippets.Testing.csproj", "{F75EC058-5ADC-4FF7-81CD-B7374506D1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetHarness", "CodeSnippetHarness\CodeSnippetHarness.csproj", "{74F9F831-7BEC-416F-9E79-D612994D8BE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7486DBA-CB38-46FC-87AB-0FB13BE74332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7486DBA-CB38-46FC-87AB-0FB13BE74332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7486DBA-CB38-46FC-87AB-0FB13BE74332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7486DBA-CB38-46FC-87AB-0FB13BE74332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75EC058-5ADC-4FF7-81CD-B7374506D1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75EC058-5ADC-4FF7-81CD-B7374506D1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75EC058-5ADC-4FF7-81CD-B7374506D1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75EC058-5ADC-4FF7-81CD-B7374506D1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
