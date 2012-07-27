@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EmbeddedResource Include="pak-WebContent.zip" />
     <None Include="snippets.asset.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -85,9 +86,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <EmbeddedResource Include="pak-WebContent.zip" />
-  </ItemGroup>
   <ItemGroup>
     <Content Include="content\scripts\bootstrap-prettify.js" />
     <Content Include="content\scripts\prettify.js" />
