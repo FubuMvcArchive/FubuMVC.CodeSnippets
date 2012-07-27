@@ -80,7 +80,7 @@ end
 
 desc "Compiles the app"
 task :compile => [:restore_if_missing, :clean, :version] do
-  sh "bottles assembly-pak src/FubuMVC.CodeSnippets -p FubuMVC.CodeSnippets.csproj"
+  bottles("assembly-pak src/FubuMVC.CodeSnippets -p FubuMVC.CodeSnippets.csproj")
 
   FileUtils.rm_rf 'src/CodeSnippetHarness/fubu-content'
 
@@ -89,6 +89,11 @@ task :compile => [:restore_if_missing, :clean, :version] do
   target = COMPILE_TARGET.downcase
 
 
+end
+
+def self.bottles(args)
+  bottles = Platform.runtime(Nuget.tool("Bottles", "BottleRunner.exe"))
+  sh "#{bottles} #{args}"
 end
 
 def copyOutputFiles(fromDir, filePattern, outDir)
