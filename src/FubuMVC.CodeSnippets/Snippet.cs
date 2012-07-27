@@ -5,15 +5,13 @@ namespace FubuMVC.CodeSnippets
     public class Snippet
     {
         private readonly string _name;
-        private readonly int _start;
+        private int _start;
         private readonly StringWriter _writer = new StringWriter();
         private int _end;
 
-        public Snippet(string name, int start)
+        public Snippet(string name)
         {
             _name = name;
-            _start = start;
-            _end = start - 1;
         }
 
         public string Name
@@ -28,10 +26,15 @@ namespace FubuMVC.CodeSnippets
 
         public string File { get; set;}
         
-        public void Append(string text)
+        public void Append(string text, int lineNumber)
         {
+            if (_start == 0)
+            {
+                _start = lineNumber;
+            }
+
             _writer.WriteLine(text);
-            _end++;
+            _end = lineNumber;
         }
 
         public int Start

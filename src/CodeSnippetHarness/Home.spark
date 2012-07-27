@@ -1,0 +1,22 @@
+﻿<use namespace="FubuMVC.CodeSnippets" />
+<viewdata model="CodeSnippetHarness.HomeModel" />
+<html>
+	<head>
+		<title>Code Snippet Examples</title>
+    !{this.WriteCssTags("prettify.css")}
+  </head>
+	<body>
+		<h1>Snippets!</h1>
+
+		<h4>Javascript</h4>
+		!{this.CodeSnippet("nextTick")}
+	
+	
+		<h4>C#</h4>
+    !{this.CodeSnippet("AddLine")}
+
+
+    !{this.WriteScriptTags()}
+    
+  </body>
+</html>

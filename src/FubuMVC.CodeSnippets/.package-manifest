@@ -3,9 +3,6 @@
   <Role>module</Role>
   <Name>FubuMVC.CodeSnippets</Name>
   <assembly>FubuMVC.CodeSnippets</assembly>
-  <DataFileSet Include="*.*">
-    <DeepSearch>true</DeepSearch>
-  </DataFileSet>
   <ContentFileSet Include="*.as*x;*.master;Content\*.*;*.config;">
     <DeepSearch>true</DeepSearch>
   </ContentFileSet>

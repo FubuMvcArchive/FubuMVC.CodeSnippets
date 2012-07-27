@@ -85,6 +85,8 @@ task :compile => [:restore_if_missing, :clean, :version] do
   target = COMPILE_TARGET.downcase
 
   sh "bottles assembly-pak src/FubuMVC.CodeSnippets -p FubuMVC.CodeSnippets.csproj"
+
+  FileUtils.rm_rf 'src/CodeSnippetHarness/fubu-content'
 end
 
 def copyOutputFiles(fromDir, filePattern, outDir)

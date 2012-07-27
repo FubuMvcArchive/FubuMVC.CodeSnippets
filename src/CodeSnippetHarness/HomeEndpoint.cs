@@ -1,10 +1,18 @@
+using FubuMVC.Core.UI;
+using HtmlTags;
+
 namespace CodeSnippetHarness
 {
+    public class HomeModel
+    {
+        
+    }
+
     public class HomeEndpoint
     {
-        public string Index()
+        public HomeModel Index()
         {
-            return "Hey!";
+            return new HomeModel();
         }
     }
 }

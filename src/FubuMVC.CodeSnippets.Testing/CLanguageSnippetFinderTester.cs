@@ -23,7 +23,7 @@ namespace FubuMVC.CodeSnippets.Testing
         private void scan(string text)
         {
             var file = new FakeFubuFile(text);
-            var finder = new CLanguageSnippetFinder();
+            var finder = new CLangSnippetFinder("cs");
 
             finder.Read(file, theSnippets.Add);
         }
@@ -59,6 +59,7 @@ Wisconsin");
             snippet.Start.ShouldEqual(7);
             snippet.End.ShouldEqual(10);
 
+            snippet.Class.ShouldEqual("lang-cs");
         }
 
         [Test]
@@ -139,7 +140,7 @@ Lindsey
 
         public string ReadContents()
         {
-            throw new NotImplementedException();
+            return _writer.ToString();
         }
 
         public void ReadContents(Action<Stream> action)

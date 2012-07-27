@@ -54,6 +54,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,10 +68,14 @@
     <Compile Include="ISnippetFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Snippet.cs" />
-    <Compile Include="CLanguageSnippetFinder.cs" />
+    <Compile Include="CLangSnippetFinder.cs" />
+    <Compile Include="SnippetClasses.cs" />
+    <Compile Include="SnippetPageExtensions.cs" />
+    <Compile Include="SnippetTag.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="snippets.asset.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -84,6 +89,8 @@
     <EmbeddedResource Include="pak-WebContent.zip" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="pak-Data.zip" />
+    <Content Include="content\scripts\bootstrap-prettify.js" />
+    <Content Include="content\scripts\prettify.js" />
+    <Content Include="content\styles\prettify.css" />
   </ItemGroup>
 </Project>
