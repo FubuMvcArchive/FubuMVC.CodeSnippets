@@ -23,9 +23,9 @@ namespace FubuMVC.CodeSnippets.Testing
         private void scan(string text)
         {
             var file = new FakeFubuFile(text);
-            var finder = new CLangSnippetFinder("cs");
+            var finder = new SnippetReader(file, new CLangSnippetScanner("cs"), theSnippets.Add);
 
-            finder.Read(file, theSnippets.Add);
+            finder.Start();
         }
 
         [Test]
