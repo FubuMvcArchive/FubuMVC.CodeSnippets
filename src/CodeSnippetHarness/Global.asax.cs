@@ -15,8 +15,16 @@ namespace CodeSnippetHarness
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            FubuApplication.For<HarnessRegistry>().StructureMap(new Container()).Bootstrap();
+            new CodeSnippetHarnessApplication().BuildApplication().Bootstrap();
         }
 
+    }
+
+    public class CodeSnippetHarnessApplication : IApplicationSource
+    {
+        public FubuApplication BuildApplication()
+        {
+            return FubuApplication.For<HarnessRegistry>().StructureMap(new Container());
+        }
     }
 }

@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\rakefile.rb = ..\rakefile.rb
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetsStoryteller", "CodeSnippetsStoryteller\CodeSnippetsStoryteller.csproj", "{22FC9B81-9B65-42FC-B23E-DB659480554F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74F9F831-7BEC-416F-9E79-D612994D8BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FC9B81-9B65-42FC-B23E-DB659480554F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FC9B81-9B65-42FC-B23E-DB659480554F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FC9B81-9B65-42FC-B23E-DB659480554F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FC9B81-9B65-42FC-B23E-DB659480554F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
