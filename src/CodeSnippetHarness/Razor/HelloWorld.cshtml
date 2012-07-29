@@ -1,0 +1,6 @@
+﻿@using CodeSnippetHarness.Razor.HelloRazor
+@model CodeSnippetHarness.Razor.HelloWorldRazorViewModel
+@* SAMPLE: Razor *@
+<h1>@Model.Message</h1>
+@this.Raw(this.Partial(new HelloRazorPartialInputModel()))
+@* ENDSAMPLE *@

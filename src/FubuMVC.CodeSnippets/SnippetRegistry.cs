@@ -16,6 +16,7 @@ namespace FubuMVC.CodeSnippets
                 x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("xml"));
                 x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("htm"));
                 x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("html", "lang-htm"));
+                x.AddService<ISnippetScanner, RazorSnippetScanner>();
 
                 x.AddService<ISnippetCache, SnippetCache>();
                 x.AddService<IActivator, SnippetBuilder>();

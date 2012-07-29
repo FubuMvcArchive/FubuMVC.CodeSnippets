@@ -66,6 +66,7 @@
       <Link>CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="CLangSnippetScanner.cs" />
+    <Compile Include="RazorSnippetScanner.cs" />
     <Compile Include="HtmlStyleSnippetScanner.cs" />
     <Compile Include="ISnippetCache.cs" />
     <Compile Include="ISnippetScanner.cs" />

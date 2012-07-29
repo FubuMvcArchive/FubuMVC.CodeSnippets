@@ -52,6 +52,9 @@
     <Reference Include="FubuMVC.OwinHost">
       <HintPath>..\packages\FubuKayak.0.9.8.1052\lib\net40\FubuMVC.OwinHost.dll</HintPath>
     </Reference>
+    <Reference Include="FubuMVC.Razor">
+      <HintPath>..\packages\FubuMVC.Razor.0.9.8.1052\lib\net40\FubuMVC.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="FubuMVC.Spark">
       <HintPath>..\packages\FubuMVC.Spark.0.9.8.1052\lib\net40\FubuMVC.Spark.dll</HintPath>
     </Reference>
@@ -88,6 +91,9 @@
     <Reference Include="pnunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Rhino.Mocks">
       <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
     </Reference>
@@ -112,6 +118,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

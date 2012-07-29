@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Test name="Razor sample" lifecycle="Acceptance">
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="Razor" />
+    <TheFirstLineIs isStep="True" txt="&lt;h1&gt;@Model.Message&lt;/h1&gt;" />
+    <TheLastLine isStep="True" txt="@this.Raw(this.Partial(new HelloRazorPartialInputModel()))" />
+  </SnippetScreen>
+</Test>

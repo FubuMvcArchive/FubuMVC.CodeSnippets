@@ -44,6 +44,9 @@
     <Reference Include="FubuMVC.Core">
       <HintPath>..\packages\FubuMVC.References.0.9.8.1052\lib\net40\FubuMVC.Core.dll</HintPath>
     </Reference>
+    <Reference Include="FubuMVC.Razor">
+      <HintPath>..\packages\FubuMVC.Razor.0.9.8.1052\lib\net40\FubuMVC.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="FubuMVC.Spark">
       <HintPath>..\packages\FubuMVC.Spark.0.9.8.1052\lib\net40\FubuMVC.Spark.dll</HintPath>
     </Reference>
@@ -54,6 +57,9 @@
       <HintPath>..\packages\HtmlTags.1.1.0.86\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Spark">
       <HintPath>..\packages\Spark.1.7.0.0\lib\NET40\Spark.dll</HintPath>
     </Reference>
@@ -68,6 +74,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -102,6 +112,7 @@
     <Compile Include="HarnessRegistry.cs" />
     <Compile Include="HomeEndpoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Razor\HelloRazorController.cs" />
     <Compile Include="SamplesEndpoint.cs" />
     <Compile Include="SomeClass.cs" />
   </ItemGroup>
@@ -118,6 +129,8 @@
     <Content Include="harness.asset.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Razor\HelloPartial.cshtml" />
+    <Content Include="Razor\HelloWorld.cshtml" />
     <None Include="Snippet.spark">
       <SubType>Designer</SubType>
     </None>
