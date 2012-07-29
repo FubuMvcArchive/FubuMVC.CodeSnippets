@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TestResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExecutionTime="0.1592913" ExceptionText="" WasCancelled="false" Locator="Languages/JavaScript sample">
+<TestResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExecutionTime="0.1687475" ExceptionText="" WasCancelled="false" Locator="Languages/JavaScript sample">
   <Html>&lt;!DOCTYPE html&gt;
 &lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;style&gt;body
 {

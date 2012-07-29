@@ -38,7 +38,7 @@ namespace FubuMVC.CodeSnippets.Testing
         [Test]
         public void is_at_start_positive()
         {
-            var scanner = new HtmlStyleSnippetScanner("spark");
+            var scanner = new BlockCommentScanner("<!--", "-->", "spark", "lang-htm");
 
             scanner.DetermineName("    <!--SAMPLE: UsingCodeSnippetInSpark-->").ShouldEqual("UsingCodeSnippetInSpark");
             scanner.DetermineName("<!--SAMPLE: UsingCodeSnippetInSpark-->").ShouldEqual("UsingCodeSnippetInSpark");
@@ -49,7 +49,7 @@ namespace FubuMVC.CodeSnippets.Testing
         [Test]
         public void is_at_start_miss()
         {
-            var scanner = new HtmlStyleSnippetScanner("spark");
+            var scanner = new BlockCommentScanner("<!--", "-->", "spark", "lang-htm");
 
             scanner.DetermineName("<h1>some html</h1>").ShouldBeNull();
             scanner.DetermineName("SAMPLE: UsingCodeSnippetInSpark").ShouldBeNull();
@@ -58,7 +58,7 @@ namespace FubuMVC.CodeSnippets.Testing
         [Test]
         public void is_at_end()
         {
-            var scanner = new HtmlStyleSnippetScanner("spark");
+            var scanner = new BlockCommentScanner("<!--", "-->", "spark", "lang-htm");
 
             scanner.IsAtEnd("<!-- SAMPLE: something").ShouldBeFalse();
             scanner.IsAtEnd("<p>some html</p>").ShouldBeFalse();

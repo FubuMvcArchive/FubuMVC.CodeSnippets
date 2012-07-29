@@ -12,10 +12,10 @@ namespace FubuMVC.CodeSnippets
             {
                 x.AddService<ISnippetScanner>(new CLangSnippetScanner("cs"));
                 x.AddService<ISnippetScanner>(new CLangSnippetScanner("js"));
-                x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("spark", "lang-html"));
-                x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("xml"));
-                x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("htm"));
-                x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("html", "lang-htm"));
+                x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "spark", "lang-html"));
+                x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "htm", "lang-html"));
+                x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "html", "lang-html"));
+                x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "xml", "lang-xml"));
                 x.AddService<ISnippetScanner, RazorSnippetScanner>();
 
                 x.AddService<ISnippetCache, SnippetCache>();
