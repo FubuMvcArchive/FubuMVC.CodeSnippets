@@ -16,6 +16,7 @@ namespace FubuMVC.CodeSnippets
                 x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "htm", "lang-html"));
                 x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "html", "lang-html"));
                 x.AddService<ISnippetScanner>(new BlockCommentScanner("<!--", "-->", "xml", "lang-xml"));
+                x.AddService<ISnippetScanner>(new BlockCommentScanner("/*", "*/", "css", "lang-css"));
                 x.AddService<ISnippetScanner, RazorSnippetScanner>();
 
                 x.AddService<ISnippetCache, SnippetCache>();

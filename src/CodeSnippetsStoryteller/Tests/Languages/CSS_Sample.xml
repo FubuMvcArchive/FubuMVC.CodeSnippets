@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Test name="CSS Sample" lifecycle="Regression">
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="CSS" />
+    <TheFirstLineIs isStep="True" txt="body" />
+    <TheLastLine isStep="True" txt="}" />
+    <SnippetContains isStep="True" txt="margin-top: -10px;" />
+  </SnippetScreen>
+</Test>
