@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Test name="Htm Sample" lifecycle="Regression">
+  <Comment><![CDATA[This code snippet is pulled from an *.htm file]]></Comment>
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="DesignConcepts1" />
+    <TheFirstLineIs isStep="True" txt="&lt;h2&gt;" />
+    <TheLastLine isStep="True" txt="&lt;/p&gt;" />
+    <SnippetContains isStep="True" txt="Design Concepts" />
+    <SnippetContains isStep="True" txt="effectively use StructureMap" />
+  </SnippetScreen>
+  <Comment><![CDATA[This code snippet is pulled from an *.html file]]></Comment>
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="DesignConcepts2" />
+    <TheFirstLineIs isStep="True" txt="&lt;h2&gt;" />
+    <TheLastLine isStep="True" txt="&lt;/p&gt;" />
+    <SnippetContains isStep="True" txt="Design Concepts" />
+    <SnippetContains isStep="True" txt="effectively use StructureMap" />
+  </SnippetScreen>
+</Test>

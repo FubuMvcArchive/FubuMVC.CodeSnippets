@@ -77,8 +77,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Concepts.htm" />
     <Content Include="content\scripts\jquery-1.7.min.js" />
     <Content Include="content\scripts\sinon-samples.js" />
+    <Content Include="Concepts2.html" />
     <Content Include="snippet.xml" />
     <Content Include="Global.asax" />
     <Content Include="wholefile.xml" />
