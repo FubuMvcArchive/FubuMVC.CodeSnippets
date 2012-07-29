@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Test name="Spark sample" lifecycle="Regression">
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="UsingCodeSnippetInSpark" />
+    <TheFirstLineIs isStep="True" txt="&lt;h4&gt;C#&lt;/h4&gt;" />
+    <TheLastLine isStep="True" txt="!{this.CodeSnippet(&quot;AddLine&quot;)}" />
+  </SnippetScreen>
+</Test>

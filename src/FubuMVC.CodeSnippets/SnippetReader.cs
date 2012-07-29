@@ -42,7 +42,7 @@ namespace FubuMVC.CodeSnippets
 
                 _readAction = (txt, num) =>
                 {
-                    if (txt.Trim().StartsWith(Snippets.END))
+                    if (_scanner.IsAtEnd(txt))
                     {
                         _onFound(snippet);
                         _readAction = lookForNewSnippet;

@@ -5,6 +5,8 @@ namespace FubuMVC.CodeSnippets
 {
     public class CLangSnippetScanner : ISnippetScanner
     {
+        private readonly string Start = "// " + Snippets.SAMPLE;
+        private readonly string End = "// " + Snippets.END;
         private readonly string _extension;
 
         public CLangSnippetScanner(string extension)
@@ -14,7 +16,7 @@ namespace FubuMVC.CodeSnippets
 
         public string DetermineName(string line)
         {
-            if (line.TrimStart().StartsWith(Snippets.SAMPLE))
+            if (line.TrimStart().StartsWith(Start))
             {
                 return line.Split(':').Last().Trim();
             }
@@ -24,7 +26,7 @@ namespace FubuMVC.CodeSnippets
 
         public bool IsAtEnd(string line)
         {
-            return line.Trim().StartsWith(Snippets.END);
+            return line.Trim().StartsWith(End);
         }
 
         public string LanguageClass

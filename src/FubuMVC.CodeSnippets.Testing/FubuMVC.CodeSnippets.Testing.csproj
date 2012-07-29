@@ -85,7 +85,7 @@
     <Compile Include="CLanguageSnippetFinderTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SnippetTester.cs" />
-    <Compile Include="SparkSnippetFinderTester.cs" />
+    <Compile Include="HtmlStyleSnippetScannerTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

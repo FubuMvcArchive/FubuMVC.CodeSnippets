@@ -12,6 +12,7 @@ namespace FubuMVC.CodeSnippets
             {
                 x.AddService<ISnippetScanner>(new CLangSnippetScanner("cs"));
                 x.AddService<ISnippetScanner>(new CLangSnippetScanner("js"));
+                x.AddService<ISnippetScanner>(new HtmlStyleSnippetScanner("spark", "lang-html"));
 
                 x.AddService<ISnippetCache, SnippetCache>();
                 x.AddService<IActivator, SnippetBuilder>();

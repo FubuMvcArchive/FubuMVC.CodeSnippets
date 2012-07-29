@@ -23,9 +23,33 @@ namespace FubuMVC.CodeSnippets.Testing
         private void scan(string text)
         {
             var file = new FakeFubuFile(text);
-            var finder = new SnippetReader(file, new CLangSnippetScanner("cs"), theSnippets.Add);
+            var reader = new SnippetReader(file, new CLangSnippetScanner("cs"), theSnippets.Add);
 
-            finder.Start();
+            reader.Start();
+        }
+
+        [Test]
+        public void determine_name()
+        {
+            var scanner = new CLangSnippetScanner("cs");
+
+            scanner.DetermineName("// SAMPLE: States").ShouldEqual("States");
+            scanner.DetermineName("     // SAMPLE: States").ShouldEqual("States");
+            scanner.DetermineName("    // SAMPLE: States").ShouldEqual("States");
+            scanner.DetermineName("Texas").ShouldBeNull();
+            scanner.DetermineName("SAMPLE:").ShouldBeNull();
+        }
+
+        [Test]
+        public void is_at_end()
+        {
+            var scanner = new CLangSnippetScanner("cs");
+            scanner.IsAtEnd("// ENDSAMPLE").ShouldBeTrue();
+
+            scanner.IsAtEnd("// SAMPLE: States").ShouldBeFalse();
+            scanner.IsAtEnd("Texas").ShouldBeFalse();
+            scanner.IsAtEnd("ENDSAMPLE").ShouldBeFalse();
+            scanner.IsAtEnd("// Something else").ShouldBeFalse();
         }
 
         [Test]
