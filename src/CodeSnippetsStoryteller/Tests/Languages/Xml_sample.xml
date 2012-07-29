@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Test name="Xml sample" lifecycle="Regression">
+  <SnippetScreen>
+    <OpenSnippet isStep="True" snippetName="ProjectToken" />
+    <TheFirstLineIs isStep="True" txt="&lt;ProjectToken&gt;" />
+    <TheLastLine isStep="True" txt="&lt;/ProjectToken&gt;" />
+    <SnippetContains isStep="True" txt="&lt;Filename&gt;C:\code\firefly\src\SurgeryLogistics.Storyteller\firefly.xml&lt;/Filename&gt;" />
+  </SnippetScreen>
+</Test>
