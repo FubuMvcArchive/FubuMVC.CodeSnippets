@@ -8,6 +8,8 @@ namespace FubuMVC.CodeSnippets
     {
         public SnippetRegistry()
         {
+            Actions.IncludeType<CodeFileEndpoint>();
+
             Services(x =>
             {
                 x.AddService<ISnippetScanner>(new CLangSnippetScanner("cs"));

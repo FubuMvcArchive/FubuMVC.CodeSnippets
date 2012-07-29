@@ -37,7 +37,8 @@ namespace FubuMVC.CodeSnippets
             if (name.IsNotEmpty())
             {
                 var snippet = new Snippet(name){
-                    Class = _scanner.LanguageClass
+                    Class = _scanner.LanguageClass,
+                    File = _file.RelativePath
                 };
 
                 _readAction = (txt, num) =>

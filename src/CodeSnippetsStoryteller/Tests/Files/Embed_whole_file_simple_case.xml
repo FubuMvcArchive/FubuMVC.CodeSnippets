@@ -5,5 +5,9 @@
     <TheFirstLineIs isStep="True" txt="&lt;?xml version=&quot;1.0&quot;?&gt;" />
     <TheLastLine isStep="True" txt="&lt;/ProjectHistory&gt;" />
     <SnippetContains isStep="True" txt="&lt;ProjectHistory" />
+    <Comment><![CDATA[Open a file that has "snippets" embedded, just see that the SAMPLE/ENDSAMPLE business is edited out]]></Comment>
+    <OpenSnippet isStep="True" snippetName="snippet.xml" />
+    <SnippetDoesNotContain isStep="True" txt="SAMPLE" />
+    <SnippetDoesNotContain isStep="True" txt="ENDSAMPLE" />
   </WholeFile>
 </Test>

@@ -1,22 +1,35 @@
-using CodeSnippetHarness;
+using System.Linq;
+using FubuCore;
+using FubuMVC.CodeSnippets;
 using OpenQA.Selenium;
 using Serenity.Fixtures;
 using StoryTeller.Assertions;
 using StoryTeller.Engine;
-using FubuCore;
-using System.Linq;
 
 namespace CodeSnippetsStoryteller.Fixtures
 {
-    public class SnippetScreenFixture : ScreenFixture<SnippetRequest>
+    public class CodeFileFixture : ScreenFixture
     {
         private string _snippetText;
 
-        public void OpenSnippet(string snippetName)
+        public void OpenFile(string path)
         {
-            Navigation.NavigateTo(new SnippetRequest{Name = snippetName});
+            var request = new CodeFileRequest(path);
+            Navigation.NavigateTo(request);
 
             _snippetText = SearchContext.FindElement(By.Id("snippet")).Text;
+        }
+
+        [FormatAs("The document title should be {title}")]
+        public string TitleIs()
+        {
+            return SearchContext.FindElement(By.TagName("title")).Text;
+        }
+
+        [FormatAs("The page header should be {title}")]
+        public string PageHeaderIs()
+        {
+            return SearchContext.FindElement(By.TagName("h1")).Text;
         }
 
         [FormatAs("The snippet should contain the txt {txt}")]

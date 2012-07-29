@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Test name="Display whole file sad path" lifecycle="Regression">
+  <CodeFile>
+    <OpenFile isStep="True" path="nonexistent.txt" />
+    <SnippetContains isStep="True" txt="Could not find file nonexistent.txt" />
+  </CodeFile>
+</Test>

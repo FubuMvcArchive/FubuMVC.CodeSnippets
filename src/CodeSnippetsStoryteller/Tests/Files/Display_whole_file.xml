@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Test name="Display whole file" lifecycle="Regression">
+  <CodeFile>
+    <OpenFile isStep="True" path="wholefile.xml" />
+    <TheFirstLineIs isStep="True" txt="&lt;?xml version=&quot;1.0&quot;?&gt;" />
+    <TheLastLine isStep="True" txt="&lt;/ProjectHistory&gt;" />
+    <TitleIs isStep="True" title="wholefile.xml" />
+    <PageHeaderIs isStep="True" title="wholefile.xml" />
+    <Comment><![CDATA[Now, open a file that has snippets and see that the snippet junk is edited out]]></Comment>
+    <OpenFile isStep="True" path="snippet.xml" />
+    <SnippetDoesNotContain isStep="True" txt="SAMPLE" />
+    <Comment><![CDATA[Lastly, let's try a deeper file]]></Comment>
+    <OpenFile isStep="True" path="content/styles/master.css" />
+    <TheFirstLineIs isStep="True" txt="body" />
+    <SnippetContains isStep="True" txt=".topbar h3 a, .topbar .brand" />
+  </CodeFile>
+</Test>

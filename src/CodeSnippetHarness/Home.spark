@@ -10,6 +10,7 @@
 
 		<h4>Javascript</h4>
 		!{this.CodeSnippet("nextTick")}
+    !{this.LinkToSnippet("nextTick")}
 	
 	  <!--SAMPLE: UsingCodeSnippetInSpark-->
 		<h4>C#</h4>
@@ -19,6 +20,10 @@
 
     <h4>Whole File</h4>
     !{this.CodeFile("wholefile.xml")}
+    !{this.LinkToCodeFile("wholefile.xml")}
+
+    <h4>Deep Link</h4>
+    !{this.LinkToCodeFile("content/styles/master.css")}
 
     !{this.WriteScriptTags()}
     

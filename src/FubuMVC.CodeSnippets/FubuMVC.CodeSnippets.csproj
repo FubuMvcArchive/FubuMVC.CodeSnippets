@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="BlockCommentScanner.cs" />
     <Compile Include="CLangSnippetScanner.cs" />
+    <Compile Include="CodeFileEndpoint.cs" />
     <Compile Include="CodeFormatter.cs" />
     <Compile Include="RazorSnippetScanner.cs" />
     <Compile Include="ISnippetCache.cs" />
