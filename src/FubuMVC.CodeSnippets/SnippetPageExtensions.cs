@@ -1,4 +1,6 @@
+using System.IO;
 using FubuMVC.Core.Assets;
+using FubuMVC.Core.Runtime.Files;
 using FubuMVC.Core.View;
 using HtmlTags;
 
@@ -20,6 +22,16 @@ namespace FubuMVC.CodeSnippets
         public static HtmlTag CodeSnippet(this IFubuPage page, string snippetName)
         {
             var snippet = page.Get<ISnippetCache>().Find(snippetName);
+            return page.CodeSnippet(snippet);
+        }
+
+        public static HtmlTag CodeFile(this IFubuPage page, string fileName, string languageClass = null, bool levelIndentation = false)
+        {
+            var formatter = new CodeFormatter(levelIndentation);
+            var file = page.Get<IFubuApplicationFiles>().Find(fileName);
+
+            var snippet = formatter.Format(file);
+
             return page.CodeSnippet(snippet);
         }
     }

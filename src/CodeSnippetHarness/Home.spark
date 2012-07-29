@@ -16,6 +16,10 @@
     !{this.CodeSnippet("AddLine")}
     <!--ENDSAMPLE-->
 
+
+    <h4>Whole File</h4>
+    !{this.CodeFile("wholefile.xml")}
+
     !{this.WriteScriptTags()}
     
   </body>

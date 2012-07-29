@@ -6,7 +6,18 @@ namespace CodeSnippetHarness
         {
             return request;
         }
+
+        public WholeFile get_file_Name(WholeFile file)
+        {
+            return file;
+        }
     }
+
+    public class WholeFile
+    {
+        public string Name { get; set;}
+    }
+
 
     public class SnippetRequest
     {

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Test name="Embed whole file simple case" lifecycle="Regression">
+  <WholeFile>
+    <OpenSnippet isStep="True" snippetName="wholefile.xml" />
+    <TheFirstLineIs isStep="True" txt="&lt;?xml version=&quot;1.0&quot;?&gt;" />
+    <TheLastLine isStep="True" txt="&lt;/ProjectHistory&gt;" />
+    <SnippetContains isStep="True" txt="&lt;ProjectHistory" />
+  </WholeFile>
+</Test>

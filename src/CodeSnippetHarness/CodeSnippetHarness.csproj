@@ -132,6 +132,9 @@
   <ItemGroup>
     <Content Include="Razor\HelloPartial.cshtml" />
     <Content Include="Razor\HelloWorld.cshtml" />
+    <None Include="WholeFile.spark">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Snippet.spark">
       <SubType>Designer</SubType>
     </None>
