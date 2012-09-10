@@ -187,6 +187,12 @@ Lindsey
             get { throw new NotImplementedException(); }
         }
 
+        public string ProvenancePath
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
         public string RelativePath
         {
             get; set;
