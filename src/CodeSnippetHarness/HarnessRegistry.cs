@@ -6,8 +6,6 @@ namespace CodeSnippetHarness
     {
         public HarnessRegistry()
         {
-            Views.TryToAttachWithDefaultConventions();
-            Routes.HomeIs<HomeEndpoint>(x => x.Index());
         }
     }
 }

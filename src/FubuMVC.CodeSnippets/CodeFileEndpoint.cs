@@ -1,4 +1,5 @@
-﻿using FubuMVC.Core.Resources.PathBased;
+﻿using FubuMVC.Core.Assets;
+using FubuMVC.Core.Resources.PathBased;
 using FubuMVC.Core.UI;
 using HtmlTags;
 

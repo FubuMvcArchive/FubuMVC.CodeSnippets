@@ -12,7 +12,9 @@
     <description>Embed code samples into a FubuMVC application using Google's prettify.js library</description>
     <tags>fubumvc realtime serversentevents events</tags>
     <dependencies>
-      <dependency id="FubuMVC.References" version="0.9.8.993" />
+      <dependency id="FubuMVC.Core" version="0.9.8.1219" />
+      <dependency id="FubuMVC.Core.UI" version="0.9.9.17" />
+      <dependency id="FubuMVC.Core.Assets" version="0.9.9.15" />
     </dependencies>
   </metadata>
   <files>

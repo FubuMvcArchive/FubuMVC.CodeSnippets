@@ -1,4 +1,6 @@
 ﻿<use namespace="FubuMVC.CodeSnippets" />
+<use namespace="FubuMVC.Core.Assets" />
+
 <viewdata model="CodeSnippetHarness.WholeFile" />
 <html>
 	<head>
