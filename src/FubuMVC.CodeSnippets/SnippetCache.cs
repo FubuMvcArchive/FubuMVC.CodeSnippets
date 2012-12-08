@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FubuCore.Util;
 
 namespace FubuMVC.CodeSnippets
@@ -14,6 +15,11 @@ namespace FubuMVC.CodeSnippets
         public Snippet Find(string name)
         {
             return _snippets[name];
+        }
+
+        public IEnumerable<Snippet> All()
+        {
+            return _snippets;
         }
     }
 }
