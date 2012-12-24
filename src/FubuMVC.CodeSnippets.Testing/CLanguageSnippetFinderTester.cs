@@ -74,11 +74,7 @@ New York
             var snippet = theSnippets.Single();
             snippet.Name.ShouldEqual("States");
             
-            snippet.Text.TrimEnd().ShouldEqual(
-@"Texas
-Arkansas
-Oklahoma
-Wisconsin");
+            snippet.Text.TrimEnd().ShouldEqual(@"Texas{0}Arkansas{0}Oklahoma{0}Wisconsin".ToFormat(Environment.NewLine));
             
             snippet.Start.ShouldEqual(7);
             snippet.End.ShouldEqual(10);
@@ -116,11 +112,7 @@ Lindsey
             var snippet1 = theSnippets.First();
             snippet1.Name.ShouldEqual("States");
 
-            snippet1.Text.TrimEnd().ShouldEqual(
-@"Texas
-Arkansas
-Oklahoma
-Wisconsin");
+            snippet1.Text.TrimEnd().ShouldEqual(@"Texas{0}Arkansas{0}Oklahoma{0}Wisconsin".ToFormat(Environment.NewLine));
 
             snippet1.Start.ShouldEqual(7);
             snippet1.End.ShouldEqual(10);

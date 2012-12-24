@@ -1,4 +1,5 @@
 using System;
+using FubuCore;
 using NUnit.Framework;
 using FubuTestingSupport;
 
@@ -23,11 +24,7 @@ namespace FubuMVC.CodeSnippets.Testing
             snippet.Start.ShouldEqual(5);
             snippet.End.ShouldEqual(7);
 
-            snippet.Text.ShouldEqual(@"
-something
-else
-and more
-".TrimStart());
+            snippet.Text.ShouldEqual(@"something{0}else{0}and more{0}".ToFormat(Environment.NewLine).TrimStart());
             
         }
     }
