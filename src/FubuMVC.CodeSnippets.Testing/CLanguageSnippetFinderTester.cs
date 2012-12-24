@@ -122,14 +122,7 @@ Lindsey
             snippet2.Start.ShouldEqual(16);
             snippet2.End.ShouldEqual(20);
 
-            snippet2.Text.ShouldEqual(
-@"
-Jeremy
-Jessica
-Natalie
-Max
-Lindsey
-".TrimStart());
+            snippet2.Text.ShouldEqual(@"Jeremy{0}Jessica{0}Natalie{0}Max{0}Lindsey{0}".ToFormat(Environment.NewLine).TrimStart());
         }
 
         
