@@ -8,5 +8,6 @@ namespace FubuMVC.CodeSnippets
         Snippet Find(string name);
 
         IEnumerable<Snippet> All();
+        Snippet FindByBottle(string name, string bottle);
     }
 }
