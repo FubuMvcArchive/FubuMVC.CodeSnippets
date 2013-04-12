@@ -91,13 +91,9 @@
     <Compile Include="CLanguageSnippetFinderTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RazorSnippetScannerTester.cs" />
+    <Compile Include="SnippetCacheTester.cs" />
     <Compile Include="SnippetTester.cs" />
     <Compile Include="HtmlStyleSnippetScannerTester.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FubuMVC.CodeSnippets\FubuMVC.CodeSnippets.csproj">

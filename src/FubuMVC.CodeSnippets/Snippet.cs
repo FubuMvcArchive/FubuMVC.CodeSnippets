@@ -14,6 +14,8 @@ namespace FubuMVC.CodeSnippets
             _name = name;
         }
 
+        public string BottleName { get; set; }
+
         public string Name
         {
             get { return _name; }

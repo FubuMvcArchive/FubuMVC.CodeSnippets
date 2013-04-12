@@ -8,6 +8,8 @@ namespace FubuMVC.CodeSnippets
 {
     public static class SnippetPageExtensions
     {
+
+
         /// <summary>
         /// Embed a code snippet into a FubuMVC view
         /// </summary>
@@ -36,6 +38,7 @@ namespace FubuMVC.CodeSnippets
             var snippet = page.Get<ISnippetCache>().Find(snippetName);
             return page.CodeSnippet(snippet);
         }
+
 
         /// <summary>
         /// Embed the contents of an entire code file into a FubuMVC view

@@ -169,7 +169,7 @@ Lindsey
 
         public string Provenance
         {
-            get { throw new NotImplementedException(); }
+            get { return "TheApp"; }
         }
 
         public string ProvenancePath
