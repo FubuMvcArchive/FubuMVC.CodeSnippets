@@ -79,6 +79,7 @@
     <Compile Include="ISnippetCache.cs" />
     <Compile Include="ISnippetScanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleCommentSnippetScanner.cs" />
     <Compile Include="Snippet.cs" />
     <Compile Include="SnippetBuilder.cs" />
     <Compile Include="SnippetCache.cs" />
