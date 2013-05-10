@@ -131,6 +131,7 @@
   <ItemGroup>
     <Content Include="Razor\HelloPartial.cshtml" />
     <Content Include="Razor\HelloWorld.cshtml" />
+    <None Include="rakefile.rb" />
     <None Include="WholeFile.spark">
       <SubType>Designer</SubType>
     </None>

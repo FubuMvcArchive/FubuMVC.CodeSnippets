@@ -27,7 +27,11 @@
     <h4>Deep Link</h4>
     !{this.LinkToCodeFile("content/styles/master.css")}
 
+
+    <h4>Ruby</h4>
+    !{this.CodeSnippet('RubySample')}
+
     !{this.WriteScriptTags()}
-    
+
   </body>
 </html>

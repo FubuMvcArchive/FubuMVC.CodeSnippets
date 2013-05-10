@@ -91,6 +91,7 @@
     <Compile Include="CLanguageSnippetFinderTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RazorSnippetScannerTester.cs" />
+    <Compile Include="RubySnippetScannerTester.cs" />
     <Compile Include="SnippetCacheTester.cs" />
     <Compile Include="SnippetTester.cs" />
     <Compile Include="HtmlStyleSnippetScannerTester.cs" />
