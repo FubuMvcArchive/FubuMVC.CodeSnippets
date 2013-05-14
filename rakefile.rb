@@ -82,6 +82,7 @@ end
 desc "Compiles the app"
 task :compile => [:restore_if_missing, :clean, :version] do
   bottles("assembly-pak src/FubuMVC.CodeSnippets -p FubuMVC.CodeSnippets.csproj")
+  bottles("assembly-pak src/FubuMVC.CodeSnippets.Docs -p FubuMVC.CodeSnippets.Docs.csproj")
 
   FileUtils.rm_rf 'src/CodeSnippetHarness/fubu-content'
 
