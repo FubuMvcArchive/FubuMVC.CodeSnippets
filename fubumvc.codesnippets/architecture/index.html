@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <title>
+      How does it work? | FubuMVC.CodeSnippets
+    </title><meta charset="utf-8" />
+<meta content="FubuWorld" name="description" />
+<meta content="FubuWorld" name="author" />
+
+
+
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/sons-of-obsidian.css" />
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/toastr.css" />
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/twitter/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/twitter/bootstrap-responsive.min.css" />
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/toastr-responsive.css" />
+<link type="text/css" rel="stylesheet" href="/FubuMVC.CodeSnippets/_content/styles/fubuworld.core.css" />
+
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body data-target=".bs-docs-sidebar" data-spy="scroll">
+    <div class="container">
+      
+      
+
+<div class="row">
+  <div class="span6">
+    <p class="logo">
+      <a title="Fubu" href="/FubuMVC.CodeSnippets/topics"><span>Fubu</span></a>
+      <a class="project-logo" title="Beautiful live snippets" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets"><span>FubuMVC.CodeSnippets</span></a>
+    </p>
+  </div>
+  <div class="span6">
+    <div class="top-header text-right">
+      <em>
+        <em><a href="https://groups.google.com/forum/?fromgroups#%21forum/fubumvc-devel">Join our vibrant mailing list</a></em>
+      </em>
+      <div class="social">
+        <a class="ico-twitter" href="http://twitter.com/fubumvc"><img src="/FubuMVC.CodeSnippets/_content/images/twitter-icon.png" alt="Twitter" /></a>
+<a class="ico-github" href="http://github.com/DarthFubuMVC/FubuMVC.CodeSnippets"><img src="/FubuMVC.CodeSnippets/_content/images/github-icon.png" alt="Github" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="navbar" id="nav-follow">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav"><li><a data-key="index" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets">FubuMVC.CodeSnippets »</a></li><li class="active"><a data-key="architecture" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets/architecture">How does it work? »</a></li></ul>
+<ul style="float:right" class="nav"><li><a title="Installing" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets/installing">Previous</a></li><li><a title="Embedding Code Snippets" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets/embedding">Next</a></li></ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        
+
+        <div class="row">
+          <div class="span3 sidebar">
+            <h3 class="half-margin" style="display: none;">Topics</h3>
+            <ul class="nav nav-tabs nav-stacked affix-top" id="page-toc">
+            </ul>
+            <br />
+            <h3 class="no-margin">Next</h3>
+<p><a data-key="embedding" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets/embedding">Embedding Code Snippets</a></p>
+<h3 class="no-margin">Previous</h3>
+<p><a data-key="installing" href="/FubuMVC.CodeSnippets/fubumvc.codesnippets/installing">Installing</a></p>
+          </div>
+          <div class="span9">
+            <h1 class="no-margin">How does it work?</h1><hr class="header-line" />
+             <!--Title: How does it work?-->
+<p>FubuMVC.CodeSnippets simply scans code files looking for comments that match this basic pattern (for C#):</p>
+
+<pre>  // SAMPLE: [SnippetName]
+
+  C# CODE
+
+  // ENDSAMPLE
+</pre>
+
+<p>In the usage above, the text after <em>// SAMPLE:</em> is the name of the snippet we'll refer to later.  The <code>// SAMPLE:</code> and <code>// ENDSAMPLE</code> comments establish the boundaries of a code snippet within the larger code file. </p>
+
+<p>At application startup, FubuMVC.CodeSnippets scans all the files in the content folders of the main application and all of the exploded <span>LINK TO PROJECT 'Bottles'</span> content looking for the comments that define named code snippets.
+When a new snippet is found, FubuMVC.CodeSnippets keeps the text, the name of the snippet, and the path to the actual file in a cache.  Later, when you use one of the view helpers like:</p>
+
+<pre class="prettyprint lang-html linenums:18 prettyprinted" data-linenums="18" style=""><ol class="linenums"><li value="18" class="L7"><span class="pln">        </span><span class="tag">&lt;h4&gt;</span><span class="pln">C#</span><span class="tag">&lt;/h4&gt;</span></li><li class="L8"><span class="pln">    !{this.CodeSnippet("AddLine")}</span></li></ol></pre>
+
+<p>the view helper will add a <code>&lt;pre&gt;</code> tag containing the contents of the snippet and add the prettyprint.js script to the requested assets for the page to style the text.</p>
+
+<p>All page extensions are on the <code>IFubuPage</code> interface meaning that all of these extension methods are available in either Spark, Razor, or WebForms (boo!) views rendered by FubuMVC.  You just need to invoke the methods off of the <em>this</em> keyword like <code>this.SomeMethod()</code>.</p>
+
+<p>You will need to either be writing the scripts in the footer of your view (my teams put it in a Spark or Razor layout once and never think about it ever again) or manually add a reference to the <code>prettyprint.js</code> library and <code>prettify.css</code>.</p>
+
+<p>See <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html">Google's PrettyPrint library</a> for more information.</p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="/FubuMVC.CodeSnippets/_content/scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/prettify.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/bootstrap-prettify.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/fubuworld.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/toastr.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/twitter/bootstrap.min.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/fubudocs-tools.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/twitter/bootstrap-affix.js" type="text/javascript"></script>
+<script src="/FubuMVC.CodeSnippets/_content/scripts/topics.js" type="text/javascript"></script>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>
+      Powered by <a href="http://github.com/DarthFubuMVC/FubuWorld">FubuDocs</a>.
+    </p>
+    <p>
+      Code licensed under the <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.
+    </p>
+  </div>
+</footer>
+  
+</body></html>

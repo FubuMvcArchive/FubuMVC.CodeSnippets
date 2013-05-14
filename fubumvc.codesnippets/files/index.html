@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body><pre>FubuMVC has detected an exception
+System.AggregateException: One or more errors occurred. ---&gt; FubuMVC.Diagnostics.Runtime.Tracing.UnhandledFubuException: Behavior failed ---&gt; System.MissingMethodException: Method not found: 'FubuMVC.CodeSnippets.Snippet FubuMVC.CodeSnippets.SnippetCache.FindByBottle(System.String, System.String)'.
+   at FubuDocs.Navigation.TopicExtensions.BottleSnippetFor(IFubuPage page, String snippetName)
+   at View38afb627bdca41969c15a32939d4368b.RenderViewLevel0()
+   at FubuMVC.Spark.Rendering.FubuSparkViewDecorator.Render()
+   at FubuDocs.Topics.TopicBehavior.performInvoke()
+   at FubuMVC.Core.Behaviors.BasicBehavior.Invoke()
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   --- End of inner exception stack trace ---
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   at FubuMVC.Core.Runtime.OutputWriter.Record(Action action)
+   at FubuMVC.Core.Behaviors.Chrome.ChromeBehavior`1.Invoke()
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   at FubuMVC.Diagnostics.Runtime.Tracing.DiagnosticBehavior.invoke(Action action)
+   at FubuMVC.StructureMap.NestedStructureMapContainerBehavior.Invoke()
+   at FubuMVC.Core.Runtime.BehaviorInvoker.Invoke(IActionBehavior behavior)
+   at FubuMVC.Core.Runtime.BehaviorInvoker.Invoke(ServiceArguments arguments, IDictionary`2 routeValues)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at FubuMVC.OwinHost.FubuOwinHost.&lt;&gt;c__DisplayClass4.&lt;Invoke&gt;b__1(Task x)
+---&gt; (Inner Exception #0) FubuMVC.Diagnostics.Runtime.Tracing.UnhandledFubuException: Behavior failed ---&gt; System.MissingMethodException: Method not found: 'FubuMVC.CodeSnippets.Snippet FubuMVC.CodeSnippets.SnippetCache.FindByBottle(System.String, System.String)'.
+   at FubuDocs.Navigation.TopicExtensions.BottleSnippetFor(IFubuPage page, String snippetName)
+   at View38afb627bdca41969c15a32939d4368b.RenderViewLevel0()
+   at FubuMVC.Spark.Rendering.FubuSparkViewDecorator.Render()
+   at FubuDocs.Topics.TopicBehavior.performInvoke()
+   at FubuMVC.Core.Behaviors.BasicBehavior.Invoke()
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   --- End of inner exception stack trace ---
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   at FubuMVC.Core.Runtime.OutputWriter.Record(Action action)
+   at FubuMVC.Core.Behaviors.Chrome.ChromeBehavior`1.Invoke()
+   at FubuMVC.Diagnostics.Runtime.Tracing.BehaviorTracer.invoke(Action action)
+   at FubuMVC.Diagnostics.Runtime.Tracing.DiagnosticBehavior.invoke(Action action)
+   at FubuMVC.StructureMap.NestedStructureMapContainerBehavior.Invoke()
+   at FubuMVC.Core.Runtime.BehaviorInvoker.Invoke(IActionBehavior behavior)
+   at FubuMVC.Core.Runtime.BehaviorInvoker.Invoke(ServiceArguments arguments, IDictionary`2 routeValues)
+   at System.Threading.Tasks.Task.Execute()&lt;---
+</pre></body></html>
