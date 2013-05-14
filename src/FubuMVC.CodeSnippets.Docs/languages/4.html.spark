@@ -1,0 +1,13 @@
+﻿<!--Title: Html Page Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.htm or *.html for snippets that follow this pattern:
+
+<Section title="Html" id="html">
+  <pre>
+    &lt;!-- SAMPLE: [SnippetName] --&gt;
+
+    Html
+
+    &lt;!-- ENDSAMPLE --&gt;
+  </pre>
+</Section>

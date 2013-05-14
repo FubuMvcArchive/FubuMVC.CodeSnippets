@@ -1,0 +1,20 @@
+﻿<!--Title: Whole Files-->
+
+
+<Section title="Embedding a Whole File" id="embed">
+
+To embed an entire file into a FubuMVC page, just use the following extension methods on <code>IFubuPage</code>:
+
+<Snippet name="embed-file"/>
+
+Snippet SAMPLE/ENDSAMPLE comments are stripped out of the rendered content and replaced with a blank line to keep the line numbers consistent with the file.
+
+</Section>
+
+<Section title="Linking to a File" id="link">
+You can also provide a link to a code file that will be rendered with prettyprint in a new window by using one of these two extension methods:
+
+<Snippet name="link-to-code-files" />
+  
+  
+</Section>

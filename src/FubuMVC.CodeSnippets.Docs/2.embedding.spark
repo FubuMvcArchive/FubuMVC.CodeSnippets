@@ -1,0 +1,13 @@
+﻿<!--Title: Embedding Code Snippets-->
+
+<markdown>
+Embedding a code snippet into a FubuMVC view is really pretty simple with the following page extensions:
+
+<Snippet name="snippet-page-extensions"/>
+
+The usage for a Spark view is:
+
+
+<Snippet name="UsingCodeSnippetInSpark" />
+
+</markdown>

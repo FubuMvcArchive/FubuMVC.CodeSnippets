@@ -1,0 +1,11 @@
+﻿<!--Title: JavaScript Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.js for snippets that follow this pattern:
+
+<pre>
+  // SAMPLE: [SnippetName]
+
+  JavaScript Code
+
+  // ENDSAMPLE
+</pre>

@@ -1,0 +1,11 @@
+﻿<!--Title: CSS Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.css for snippets that follow this pattern:
+
+<pre>
+  /* SAMPLE: [SnippetName] */
+
+  Stylesheet Markup
+
+  /* ENDSAMPLE */
+</pre>

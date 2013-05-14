@@ -1,0 +1,29 @@
+﻿<!--Title: How does it work?-->
+
+<markdown>
+FubuMVC.CodeSnippets simply scans code files looking for comments that match this basic pattern (for C#):
+
+<pre>
+  // SAMPLE: [SnippetName]
+
+  C# CODE
+
+  // ENDSAMPLE
+</pre>
+  
+In the usage above, the text after _// SAMPLE:_ is the name of the snippet we'll refer to later.  The <code>// SAMPLE:</code> and <code>// ENDSAMPLE</code> comments establish the boundaries of a code snippet within the larger code file. 
+
+At application startup, FubuMVC.CodeSnippets scans all the files in the content folders of the main application and all of the exploded <ProjectLink name="Bottles"/> content looking for the comments that define named code snippets.
+When a new snippet is found, FubuMVC.CodeSnippets keeps the text, the name of the snippet, and the path to the actual file in a cache.  Later, when you use one of the view helpers like:
+
+!{this.CodeSnippet("UsingCodeSnippetInSpark")}
+
+the view helper will add a <code>&lt;pre&gt;</code> tag containing the contents of the snippet and add the prettyprint.js script to the requested assets for the page to style the text.
+
+All page extensions are on the <code>IFubuPage</code> interface meaning that all of these extension methods are available in either Spark, Razor, or WebForms (boo!) views rendered by FubuMVC.  You just need to invoke the methods off of the _this_ keyword like <code>this.SomeMethod()</code>.
+
+You will need to either be writing the scripts in the footer of your view (my teams put it in a Spark or Razor layout once and never think about it ever again) or manually add a reference to the <code>prettyprint.js</code> library and <code>prettify.css</code>.
+
+See [Google's PrettyPrint library](http://google-code-prettify.googlecode.com/svn/trunk/README.html) for more information.
+
+</markdown>

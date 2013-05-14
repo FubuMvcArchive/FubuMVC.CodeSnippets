@@ -1,0 +1,11 @@
+﻿<!--Title: Xml Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.xml for snippets that follow this pattern:
+
+<pre>
+  &lt;!-- SAMPLE: [SnippetName] --&gt;
+
+  Xml Data
+
+  &lt;!-- ENDSAMPLE --&gt;
+</pre>

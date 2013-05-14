@@ -1,0 +1,11 @@
+﻿<!--Title: Spark View Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.spark for snippets that follow this pattern:
+
+<pre>
+  &lt;!-- SAMPLE: [SnippetName] --&gt;
+
+  Spark Markup
+
+  &lt;!-- ENDSAMPLE --&gt;
+</pre>

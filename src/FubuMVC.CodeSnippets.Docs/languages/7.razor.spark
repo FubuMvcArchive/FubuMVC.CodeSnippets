@@ -1,0 +1,11 @@
+﻿<!--Title: Razor View Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.cshtml for snippets that follow this pattern:
+
+<pre>
+  @*SAMPLE: [SnippetName]*@
+
+  Razor Markup
+
+  @* ENDSAMPLE *@
+</pre>

@@ -1,0 +1,11 @@
+﻿<!--Title: C# Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.cs for snippets that follow this pattern:
+
+<pre>
+  // SAMPLE: [SnippetName]
+
+  C# CODE
+
+  // ENDSAMPLE
+</pre>

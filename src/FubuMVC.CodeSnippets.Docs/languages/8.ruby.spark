@@ -1,0 +1,11 @@
+﻿<!--Title: Ruby Snippets-->
+
+FubuMVC.CodeSnippets will look in files with the extension *.rb for snippets that follow this pattern:
+
+<pre>
+  &#35; SAMPLE: [Sample Name]
+  
+  Ruby code....
+  
+  &#35; ENDSAMPLE
+</pre>

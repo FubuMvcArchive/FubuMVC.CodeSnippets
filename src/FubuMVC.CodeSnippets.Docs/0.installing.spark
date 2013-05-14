@@ -1,0 +1,8 @@
+﻿<!--Title: Installing-->
+
+The only thing you need to do to install and activate FubuMVC.CodeSnippets in a <ProjectLink name="FubuMVC"/> application is to just get the FubuMVC.CodeSnippets.dll into your application.  The easiest way is to just use Nuget:
+
+<pre>
+Install-Package FubuMVC.CodeSnippets
+</pre>
+

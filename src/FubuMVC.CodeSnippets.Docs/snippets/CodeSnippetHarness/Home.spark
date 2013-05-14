@@ -1,0 +1,37 @@
+﻿<use namespace="FubuMVC.CodeSnippets" />
+<use namespace="FubuMVC.Core.Assets" />
+
+<viewdata model="CodeSnippetHarness.HomeModel" />
+<html>
+	<head>
+		<title>Code Snippet Examples</title>
+    !{this.WriteCssTags("prettify.css")}
+  </head>
+	<body>
+		<h1>Snippets!</h1>
+
+		<h4>Javascript</h4>
+		!{this.CodeSnippet("nextTick")}
+    !{this.LinkToSnippet("nextTick")}
+	
+	  <!--SAMPLE: UsingCodeSnippetInSpark-->
+		<h4>C#</h4>
+    !{this.CodeSnippet("AddLine")}
+    <!--ENDSAMPLE-->
+
+
+    <h4>Whole File</h4>
+    !{this.CodeFile("wholefile.xml")}
+    !{this.LinkToCodeFile("wholefile.xml")}
+
+    <h4>Deep Link</h4>
+    !{this.LinkToCodeFile("content/styles/master.css")}
+
+
+    <h4>Ruby</h4>
+    !{this.CodeSnippet('RubySample')}
+
+    !{this.WriteScriptTags()}
+
+  </body>
+</html>
