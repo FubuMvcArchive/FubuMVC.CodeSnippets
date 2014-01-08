@@ -31,13 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,16 +54,10 @@
     <EmbeddedResource Include="pak-WebContent.zip" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="pak-Data.zip" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="pak-Config.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="0.installing.spark" />
     <None Include="1.architecture.spark" />
-    <None Include="languages\7.razor.spark" />
-    <None Include="languages\8.ruby.spark" />
     <None Include="2.embedding.spark" />
     <None Include="3.files.spark" />
     <None Include="languages\1.csharp.spark" />
@@ -72,6 +66,8 @@
     <None Include="languages\4.html.spark" />
     <None Include="languages\5.xml.spark" />
     <None Include="languages\6.css.spark" />
+    <None Include="languages\7.razor.spark" />
+    <None Include="languages\8.ruby.spark" />
     <None Include="languages\index.spark" />
   </ItemGroup>
 </Project>

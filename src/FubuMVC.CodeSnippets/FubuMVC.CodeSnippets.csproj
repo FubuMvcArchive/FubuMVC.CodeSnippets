@@ -75,24 +75,22 @@
     <Compile Include="CLangSnippetScanner.cs" />
     <Compile Include="CodeFileEndpoint.cs" />
     <Compile Include="CodeFormatter.cs" />
-    <Compile Include="RazorSnippetScanner.cs" />
     <Compile Include="ISnippetCache.cs" />
     <Compile Include="ISnippetScanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RazorSnippetScanner.cs" />
     <Compile Include="RubySnippetScanner.cs" />
     <Compile Include="SimpleCommentSnippetScanner.cs" />
     <Compile Include="Snippet.cs" />
     <Compile Include="SnippetBuilder.cs" />
     <Compile Include="SnippetCache.cs" />
-    <Compile Include="Snippets.cs" />
+    <Compile Include="SnippetPageExtensions.cs" />
     <Compile Include="SnippetReader.cs" />
     <Compile Include="SnippetRegistry.cs" />
-    <Compile Include="SnippetPageExtensions.cs" />
+    <Compile Include="Snippets.cs" />
     <Compile Include="SnippetTag.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="pak-Config.zip" />
-    <EmbeddedResource Include="pak-Data.zip" />
     <EmbeddedResource Include="pak-WebContent.zip" />
     <None Include="snippets.asset.config" />
   </ItemGroup>
