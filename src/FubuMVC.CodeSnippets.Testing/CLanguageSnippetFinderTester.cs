@@ -162,6 +162,21 @@ Lindsey
             _writer.ToString().ReadLines(read);
         }
 
+        public long Length()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Etag()
+        {
+            throw new NotImplementedException();
+        }
+
+        public DateTime LastModified()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Path
         {
             get; set;
